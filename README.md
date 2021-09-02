@@ -1,3 +1,3 @@
-# The Easy UI status page
+# Make a status page for your website
 
-Can be seen on [status.easyui.dev](https://status.easyui.dev)
+You can preview an example at [status.easyui.dev](https://status.easyui.dev)
