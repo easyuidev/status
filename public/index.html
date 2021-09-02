@@ -1,21 +1,22 @@
 <!doctype html>
 <html>
 <head>
-   <title>Easy UI Status</title>
+   <title>" + websiteName + " Status</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="styles/tailwind.css" rel="stylesheet">
 </head>
 <body>
-  <img id="myImage" class="hidden" src="https://www.easyui.dev/uploads/articles/1lkwjtyqyvuedfjig17g.jpeg"  onload="pageOnline()" onerror="pageOffline()">
+  <img id="myImage" class="hidden" src="https://www.easyui.dev/uploads/articles/1lkwjtyqyvuedfjig17g.jpeg"  onload="pageOnline()" onerror="pageOffline()"><!--Replace this image src with an image on your website, prefereably something small-->
       <p id="status"></p>
       <script>
+        var websiteName = "Easy UI"
          function pageOffline() {
-           document.getElementById('status').innerHTML = "<section class='text-gray-600 body-font'><div class='container mx-auto flex px-5 py-24 items-center justify-center flex-col'><div class='text-center lg:w-2/3 w-full'><h1 class='title-font sm:text-4xl text-3xl mb-4 font-extrabold text-gray-900'>Easy UI is <span class='text-red-500'>offline</span></h1><p class='mb-8 leading-relaxed'>Our team has been alerted about this issue. We are currently working to bring Easy UI back up as fast as possible</p></div></div></section>";
+           document.getElementById('status').innerHTML = "<section class='text-gray-600 body-font'><div class='container mx-auto flex px-5 py-24 items-center justify-center flex-col'><div class='text-center lg:w-2/3 w-full'><h1 class='title-font sm:text-4xl text-3xl mb-4 font-extrabold text-gray-900'>" + websiteName + " is <span class='text-red-500'>offline</span></h1><p class='mb-8 leading-relaxed'>Our team has been alerted about this issue. We are currently working to bring " + websiteName + " back up as fast as possible</p></div></div></section>";
          }
 
          function pageOnline() {
-               document.getElementById('status').innerHTML = "<section class='text-gray-600 body-font'><div class='container mx-auto flex px-5 py-24 items-center justify-center flex-col'><div class='text-center lg:w-2/3 w-full'><h1 class='title-font sm:text-4xl text-3xl mb-4 font-extrabold text-gray-900'>Easy UI is <span class='text-green-500'>online :)</span></h1><p class='mb-8 leading-relaxed'>Have a nice day! Everything seems to be running smoothly</p></div></div> </section>";
+               document.getElementById('status').innerHTML = "<section class='text-gray-600 body-font'><div class='container mx-auto flex px-5 py-24 items-center justify-center flex-col'><div class='text-center lg:w-2/3 w-full'><h1 class='title-font sm:text-4xl text-3xl mb-4 font-extrabold text-gray-900'>" + websiteName + " is <span class='text-green-500'>online :)</span></h1><p class='mb-8 leading-relaxed'>Have a nice day! Everything seems to be running smoothly</p></div></div> </section>";
 
          }
             setInterval(function() {
