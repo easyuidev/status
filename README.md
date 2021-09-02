@@ -13,5 +13,5 @@ var websiteName = "Easy UI"
 <!--Replace this image src with an image on your website, prefereably something small-->
 ```
 3. Run `npm run build` to build the css
-4. Open public/index.html to see your status page
+4. Open `public/index.html` to see your status page
 5. Deploy this to wherever you want
