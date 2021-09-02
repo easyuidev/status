@@ -1,2 +1,3 @@
-# status
-The Easy UI status page
+# The Easy UI status page
+
+Can be seen on [status.easyui.dev](https://status.easyui.dev)
